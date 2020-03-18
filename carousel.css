@@ -25,3 +25,26 @@
   object-fit: cover;
 }
 
+.container {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(0);
+  transition:transform 0.5s;
+}
+
+.container.previous {
+  display: block;
+  transform: translate(-100%);
+}
+
+.container.current {
+  display: block;
+}
+
+.container.next {
+  display: block;
+  transform: translate(100%);
+}
+
