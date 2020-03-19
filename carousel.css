@@ -2,14 +2,14 @@
   margin: 0;
 }
 
-.carousel-wrapper {
+.carousel-item {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 10px;
 
 }
 
-.carousel-wrapper div::before {
+.carousel-item div::before {
   content: "";
   padding-bottom: 100%;
   display: inline-block;
@@ -46,5 +46,30 @@
 .container.next {
   display: block;
   transform: translate(100%);
+}
+
+.arrow-button {
+  position: absolute;
+  width: 40px;
+  top: 0;
+  z-index: 10;
+  color: white;
+  margin: auto;
+  font-size: 20px;
+  font-weight: 800;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.arrow-button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+
+.arrow-button#previous-button {
+  left: 0;
+}
+.arrow-button#next-button {
+/* */
 }
 
